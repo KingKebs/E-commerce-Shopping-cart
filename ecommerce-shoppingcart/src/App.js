@@ -1,11 +1,15 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import Subtotal from "./components/Subtotal/Subtotal";
+import "./App.css";
+
+// using constructor method to keep track of the state
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Container className="purchase-card">
-        <h1>Hello world still </h1>
+        <Subtotal price={this.state.total.toFixed(2)} />
       </Container>
     </div>
   );
