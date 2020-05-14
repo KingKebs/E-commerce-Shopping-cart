@@ -1,18 +1,16 @@
-import React from "react";
-import { Container } from "react-bootstrap";
+import React, { Component } from "react";
 import Subtotal from "./components/Subtotal/Subtotal";
+import PickupSavings from "./components/PickupSavings/PickupSavings";
 import "./App.css";
 
-// using constructor method to keep track of the state
-
-function App() {
-  return (
-    <div className="container">
-      <Container className="purchase-card">
-        <Subtotal price={this.state.total.toFixed(2)} />
-      </Container>
-    </div>
-  );
+export default class app2 extends Component {
+  render() {
+    return (
+      <div className="container">
+        <Container className="purchase-card">
+          <Subtotal price={total.price} />
+        </Container>
+      </div>
+    );
+  }
 }
-
-export default App;
