@@ -1,26 +1,35 @@
-import React, { Component, Container } from "react";
+import React, { Component } from "react";
 import { Row, Col, Tooltip, OverlayTrigger } from "react-bootstrap";
 
-class PickupSavings extends Component {
-  state = {};
+var styles = {
+  PickupSavings: {
+    textDocoration: "underline",
+  },
+  totalSavings: {
+    color: "red",
+    fontWeight: 800,
+  },
+};
+
+export default class PickupSavings extends Component {
   render() {
-    <Tooltip id="tooltip>">
-      <p>Picking up your order in store can save our on fees</p>
-    </Tooltip>;
+    const tooltip = (
+      <Tooltip id="tooltip">
+        <p>Picking up your order in store can save our on fees</p>
+      </Tooltip>
+    );
+
     return (
       <Row id="show-grid">
         <Col md={6}>
           <OverlayTrigger placement="bottom" overlay={tooltip}>
-            <div style={style.PickupSavings}>Pickup Savings</div>
+            <div style={styles.PickupSavings}>Pickup Savings</div>
           </OverlayTrigger>
         </Col>
         <Col style={styles.totalSavings} md={6}>
-          {`${$this.props.price}`}
-          {price}
+          {`ZAR${this.props.price}`}
         </Col>
       </Row>
     );
   }
 }
-
-export default PickupSavings;
