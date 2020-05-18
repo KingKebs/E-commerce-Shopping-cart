@@ -10,6 +10,17 @@ export default class ItemDetails extends Component {
   }
 
   render() {
-    return <div></div>;
+    return (
+      <div>
+        <Button
+          className="item-button"
+          bsStyle="link"
+          onClick={() => this.setState({ open: !this.state.open })}
+        >
+          {this.state.open === false ? `See` : `Hide`} Item ItemDetails
+          {this.state.open === false ? `+` : `-`}
+        </Button>
+      </div>
+    );
   }
 }

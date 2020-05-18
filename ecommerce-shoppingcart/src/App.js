@@ -5,6 +5,7 @@ import PickupSavings from "./components/PickupSavings/PickupSavings";
 import TaxFees from "./components/TaxFees/TaxFees";
 import "./App.css";
 import EstimatedTotal from "./components/estimatedTotal/EstimatedTotal";
+import ItemDetails from "./components/itemDetails/ItemDetails";
 
 export default class App extends Component {
   constructor(props) {
@@ -26,6 +27,7 @@ export default class App extends Component {
         <hr />
         <TaxFees taxes={this.state.taxes.toFixed(2)} />
         <EstimatedTotal price={this.state.estimatedTotal.toFixed(2)} />
+        <ItemDetails />
       </Container>
     );
   }
