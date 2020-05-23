@@ -1,5 +1,3 @@
-This Shopping Cart project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 The ecommerce Shopping cart functions on the checkout stage of the client.
 
 1. client confirms purchases and will be advised of any discounts applicable to purchase.
@@ -9,5 +7,6 @@ The ecommerce Shopping cart functions on the checkout stage of the client.
 
 ## TOOLS 
 REACT JS
-
+Reactbootstrap
+Redux
 
