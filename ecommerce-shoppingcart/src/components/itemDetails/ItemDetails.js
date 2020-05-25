@@ -24,11 +24,17 @@ export default class ItemDetails extends Component {
         <Collapse in={this.state.open}>
           <div>
             <Media>
-              <img width={100} height={100} src={jordan} alt="thumbnail" />
+              <img
+                className="m-2"
+                width={100}
+                height={100}
+                src={jordan}
+                alt="Concord 11"
+              />
               <Media.Body>
-                <p>
-                  Essentials by OFM ESS-3085 Racing Style Leather Gaming Chair,
-                  Red
+                <p className="m-2">
+                  CONCORD. In 1995, Michael Jordan stepped onto the hardwood for
+                  playoff competition in the now iconic Air Jordan XI.
                 </p>
                 <Row className="show-grid">
                   <Col md={6}>

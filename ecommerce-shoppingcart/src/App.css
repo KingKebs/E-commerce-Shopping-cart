@@ -1,6 +1,6 @@
 .container {
   margin-top: 20px;
-  background-color: rgb(73, 70, 70);
+  background-color: rgb(138, 125, 125);
   color: #fff;
   width: 450px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -16,4 +16,21 @@
 
 .container > .show-grid {
   padding-bottom: 1.5em;
+}
+
+.item-details-button:focus {
+  outline: none;
+}
+
+.promo-code-button:focus {
+  outline: none;
+}
+
+.btn-round {
+  border-radius: 17px;
+}
+
+.price-strike {
+  text-decoration-line: line-through;
+  color: grey;
 }
