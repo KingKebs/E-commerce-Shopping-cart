@@ -13,9 +13,9 @@ export default class App extends Component {
     super(props);
 
     this.state = {
-      total: 100,
+      total: 0,
       PickupSavings: -3.67,
-      taxes: 56,
+      taxes: 0,
       estimatedTotal: 0,
       price: 0,
     };
@@ -48,7 +48,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <Container className="container">
+      <Container className="container float-right ">
         <h1 className="text-center">Order Summary</h1>
         <Subtotal price={this.state.total.toFixed(2)} />
         <PickupSavings price={this.state.PickupSavings} />
