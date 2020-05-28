@@ -49,7 +49,7 @@ export default class PromoCode extends Component {
                     </FormGroup>{" "}
                     <Button
                       block
-                      bsstyle="success"
+                      bsstyle="danger"
                       className="btn-round"
                       // type="submit"
                       disabled={this.props.isDisabled}

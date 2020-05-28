@@ -6,21 +6,21 @@ import TaxFees from "./components/TaxFees/TaxFees";
 import "./App.css";
 import EstimatedTotal from "./components/estimatedTotal/EstimatedTotal";
 import ItemDetails from "./components/itemDetails/ItemDetails";
-import PromoCodeDiscount from "./components/PromoCode/PromoCode";
+import PromoCode from "./components/PromoCode/PromoCode";
 
 export default class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      total: 0,
+      total: 100,
       PickupSavings: -3.67,
       taxes: 0,
       estimatedTotal: 0,
       price: 0,
     };
   }
-
+  // life cycle method
   componentDidMount = () => {
     this.setState(
       { taxes: (this.state.total + this.state.pickupSavings) * 0.0875 }, //100 + -3.67 = ZAR96//
@@ -57,7 +57,7 @@ export default class App extends Component {
         <EstimatedTotal price={this.state.estimatedTotal.toFixed(2)} />
         <ItemDetails price={this.state.estimatedTotal.toFixed(2)} />
         <hr />
-        <PromoCodeDiscount
+        <PromoCode
           giveDiscount={() => this.giveDiscountHandler()}
           isDisabled={this.state.disablePromoButton}
         />
