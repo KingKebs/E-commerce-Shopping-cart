@@ -11,7 +11,10 @@ import {
   FormControl,
 } from "react-bootstrap";
 
-export default class PromoCode extends Component {
+import { connect } from "react-redux";
+import { handleChange } from "../../actions/promoCodeActions";
+
+class PromoCode extends Component {
   // state via constrct
   constructor(props, context) {
     super(props, context);
@@ -20,6 +23,12 @@ export default class PromoCode extends Component {
       open: false,
     };
   }
+
+  handleChange = (e) => {
+    // the setState below will be sent to redux
+    // this.setState({ value: e.target.value });
+    this.props.handleChange(e);
+  };
 
   render() {
     return (
@@ -67,3 +76,9 @@ export default class PromoCode extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => ({
+  promoCode: state.promoCode.value,
+});
+
+export default connect(mapStateToProps, { handleChange })(PromoCode);

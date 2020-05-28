@@ -8,7 +8,11 @@ import EstimatedTotal from "./components/estimatedTotal/EstimatedTotal";
 import ItemDetails from "./components/itemDetails/ItemDetails";
 import PromoCode from "./components/PromoCode/PromoCode";
 
-export default class App extends Component {
+// Import redux provider
+import { connect } from "react-redux";
+import { handleChange } from "./actions/promoCodeActions";
+
+class App extends Component {
   constructor(props) {
     super(props);
 
@@ -65,3 +69,11 @@ export default class App extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => ({
+  promoCode: state.promoCode.value,
+});
+
+export default connect(mapStateToProps, {
+  handleChange,
+})(App);
