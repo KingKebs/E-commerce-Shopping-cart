@@ -40,7 +40,7 @@ export default class ItemDetails extends Component {
                   <Col md={6}>
                     <strong>{`ZAR${this.props.price}`}</strong>
                     <br />
-                    <strong className="price-strike">{`ZAR${this.props.price}`}</strong>
+                    <strong className="price-strike bg-white">{`ZAR${this.props.price}`}</strong>
                   </Col>
                   <Col md={6}>
                     <strong>Qty: 1</strong>

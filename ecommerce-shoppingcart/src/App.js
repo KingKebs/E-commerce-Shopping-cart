@@ -12,6 +12,7 @@ import PromoCode from "./components/PromoCode/PromoCode";
 import { connect } from "react-redux";
 import { handleChange } from "./actions/promoCodeActions";
 
+// State management
 class App extends Component {
   constructor(props) {
     super(props);
@@ -27,11 +28,11 @@ class App extends Component {
   // life cycle method
   componentDidMount = () => {
     this.setState(
-      { taxes: (this.state.total + this.state.pickupSavings) * 0.0875 }, //100 + -3.67 = ZAR96//
+      { taxes: (this.state.total + this.state.PickupSavings) * 0.0875 }, //100 + -3.67 = ZAR96//
       function () {
         this.setState({
           estimatedTotal:
-            this.state.total + this.state.pickupSavings + this.state.taxes,
+            this.state.total + this.state.PickupSavings + this.state.taxes,
         });
       }
     );
