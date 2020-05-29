@@ -57,7 +57,6 @@ class PromoCode extends Component {
                       />
                     </FormGroup>{" "}
                     <Button
-                      block
                       bsstyle="danger"
                       className="btn-round"
                       // type="submit"
