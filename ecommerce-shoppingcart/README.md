@@ -10,3 +10,5 @@ REACT JS
 Reactbootstrap
 Redux
 
+## DEMO 
+https://github.com/KingKebs/E-commerce-Shopping-cart/blob/master/ecommerce-shoppingcart/Order%20Summary.mp4?raw=true
