@@ -8,7 +8,7 @@ The ecommerce Shopping cart functions on the checkout stage of the client.
 ## TOOLS 
 REACT JS
 Reactbootstrap
-Redux
+
 
 ## DEMO 
 ![order_Summary](https://user-images.githubusercontent.com/23705391/83450447-8e03a380-a455-11ea-8fbf-4360eb505554.gif)
